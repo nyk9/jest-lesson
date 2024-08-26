@@ -10,12 +10,12 @@ describe("Users", () => {
   });
 
   it("ユーザーが取得できる", async () => {
-    const users = [{ name: "Taro"}, { name: "Hanako"}];
-    const resp = { data: users};
+    const users = [{ name: "Taro" }, { name: "Hanako" }];
+    const resp = { data: users };
     mockFunc.get.mockResolvedValue(resp);
 
     const result = await Users.all();
     expect(result).toEqual(users);
-    expect(mockFunc.get).toHaveBeenCalledWith("/users.json")
-  })
+    expect(mockFunc.get).toHaveBeenCalledWith("/users.json");
+  });
 });
