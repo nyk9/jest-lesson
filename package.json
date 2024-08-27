@@ -1,18 +1,11 @@
 {
   "name": "jest-lesson",
   "version": "1.0.0",
-  "description": "https://www.udemy.com/share/109Sw23@oL7Iqu2yYT74I5XwynMUvzEqVz-3iZ5rJSShvlgqyvrbZKe_15hu5Qqs637Ph1m2Lw==/ で学んだことを残しておくリポジトリ",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "lint": "eslint .",
-    "format": "prettier --write ."
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
+  "main": "index.js",
   "devDependencies": {
     "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.0",
     "@typescript-eslint/eslint-plugin": "^8.2.0",
     "@typescript-eslint/parser": "^8.2.0",
     "eslint": "^9.9.1",
@@ -23,5 +16,16 @@
     "ts-jest": "^29.2.5",
     "typescript": "^5.5.4"
   },
-  "type": "commonjs"
+  "description": "https://www.udemy.com/share/109Sw23@oL7Iqu2yYT74I5XwynMUvzEqVz-3iZ5rJSShvlgqyvrbZKe_15hu5Qqs637Ph1m2Lw==/ で学んだことを残しておくリポジトリ",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.7.5"
+  }
 }
