@@ -18,14 +18,14 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    label: "Primary Button",
+    label: "Primaryボタン",
     primary: true
   }
 };
 
 export const Normal: Story = {
   args: {
-    label: "Normal Button",
+    label: "Normalボタン",
     primary: false
   }
 };
