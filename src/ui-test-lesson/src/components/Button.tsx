@@ -1,10 +1,24 @@
+import React from "react";
+
 interface ButtonProps {
   label: string;
-  onClick: () => void;
+  primary?: boolean;
+  onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
-  return <button onClick={onClick}>{label}</button>;
+const Button: React.FC<ButtonProps> = ({ label, primary = false, onClick }) => {
+  const mode = primary
+    ? "storybook-button--primary"
+    : "storybook-button--secondary";
+  return (
+    <button
+      type="button"
+      className={["storybook-button", mode].join(" ")}
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  );
 };
 
 export default Button;
