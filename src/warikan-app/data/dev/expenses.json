@@ -1,0 +1,8 @@
+[
+  {
+    "groupName": "テストグループ1",
+    "expenseName": "ディナー",
+    "payer": "一郎",
+    "amount": 10000
+  }
+]
